@@ -1,6 +1,6 @@
 <template>
   <div class = "backgroundimage">
-    <img style="position:absolute;width:100%;height:100%;" src = "../../assets/login1.jpg" />
+    <img style="position:absolute;width:100%;height:100%;" src = "../../assets/login.jpg" />
     <div class = "login">
       <div class = "login-title">四川师范大学数字迎新系统</div>
       <div class = "login-input">
