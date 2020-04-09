@@ -14,7 +14,10 @@
           <input class = "login-submit" type="submit" value="登录"/>
         </form>
       </div>
-      <div class = "login-func">444</div>
+      <div class = "login-func">
+        <input class = "savePassword" type = "checkbox" name = "save" />记住密码
+        <div class = "forgetPassword">忘记密码</div>
+      </div>
     </div>
   </div>
 </template>
@@ -45,6 +48,7 @@ export default {
     height 100%
     .login
       display flex
+      position relative
       flex-direction column
       align-items center
       height 7rem
@@ -52,28 +56,25 @@ export default {
       left 50%
       top 50%
       transform translate(-50% ,-50%)
-      position relative
-      background #00bcd4
       color #ffffff
       .login-title
         position absolute
-        top 10%
+        top 25%
       .login-input
         position absolute
-        left 50%
+        font-size .2rem
         top 50%
-        transform translate(-50% ,-50%)
+        transform translateY(-50%)
         .user
           width 3.5rem
           height .45rem
           border-radius .2rem
           margin-bottom .2rem
-          background rgba(255,255,255,0.5)
+          background rgba(255,255,255,0.55)
           color #ffffff
           .user-input
             width 3rem
             height .45rem
-            font-size .2rem
             margin-left .5rem
             background rgba(255,255,255,0)
             color #ffffff
@@ -87,10 +88,18 @@ export default {
           height .45rem
           border-radius .2rem
           margin-bottom .2rem
-          font-size .2rem
           color #ffffff
           background #0099ff
       .login-func
+        display flex
         position absolute
-        top 80%
+        width 3.5rem
+        top 65%
+        left 25%
+        font-size .15rem
+        input[type="checkbox"]
+          zoom 120%
+        .forgetPassword
+          position absolute
+          right 0
 </style>
